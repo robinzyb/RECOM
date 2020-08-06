@@ -1,0 +1,8 @@
+{
+  "pot_file": "./input/ml_pot.dat",
+  "quant_file": "./input/pdf_all_1_by_1.dat",
+  "temp": 363,
+  "reweight_method": "Asymptotic",
+  "old_alpha":1.0,
+  "new_alpha":1.0
+}

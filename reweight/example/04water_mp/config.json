@@ -1,0 +1,6 @@
+{
+  "pot_file": "./input/ml_pot.dat",
+  "quant_file": "./input/Q.dat",
+  "temp": 260,
+  "reweight_method": "Asymptotic"
+}
