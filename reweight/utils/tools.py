@@ -2,10 +2,23 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-def ipi_extra(extra_file, pot_num, unit_conversion=1.0):
+from reweight.reweight import fancy_print
+
+
+def ipi_extra(arg):
     """
     function to extract the scaled potential from ipi extra file
     """
+    extra_file = arg.ipi_extra_file
+    fancy_print("find file {0}".format(extra_file))
+    pot_num = arg.pot_num
+    fancy_print("we have {0} potentials".format(pot_num))
+    if arg.factor :
+        unit_conversion = arg.factor
+    else:
+        unit_conversion = 1.0
+
+    fancy_print("extracting the potential")
     fr = open(extra_file, "r")
     frame_pot_list = []
     for idx, line in enumerate(fr.readlines()):
@@ -22,7 +35,8 @@ def ipi_extra(extra_file, pot_num, unit_conversion=1.0):
     #save file
     frame_pot_list = np.array(frame_pot_list)*unit_conversion
     np.savetxt("ml_pot.dat", frame_pot_list)
-    print("save file to ml_pot.dat")
+    fancy_print("save file to ml_pot.dat")
+    fancy_print("Finished")
 
 def plot_example01(data1,
                    data2,

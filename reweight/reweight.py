@@ -15,6 +15,13 @@ def fancy_print(string):
     """
     print("#Reweight: {0}".format(string))
 
+def reweight_run(args):
+    if args.CONFIG:
+        fancy_print("Reweighting Start!")
+        system = Reweight(args.CONFIG)
+        system.run()
+        fancy_print("FINISHED")
+
 
 class Reweight():
     au2eV = 2.72113838565563E+01
