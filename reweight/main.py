@@ -7,8 +7,8 @@ def main():
     print("Description\n------------")
     parser = argparse.ArgumentParser(description="""
     reweight is a convenient script to reweight the quantity from commitee
-    potential, to view the type "reweight sub-command -h. the ml potential used
-    must be eV unit""")
+    potential, to view the sub-command help,  type "reweight sub-command -h.
+    the potentials stored must be eV unit""")
 
     subparsers = parser.add_subparsers()
     # run

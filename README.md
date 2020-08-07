@@ -20,9 +20,9 @@ pip install .
 
 Prepare file: `config.json`, `ml_pot.dat`, `quantity.dat`
 
-`ml_pot.dat`: store the potential value in a matrix, so if you have 4 committee potentials, the shape will be (frame_number, 4), the potential unit must be **eV**.
+`ml_pot.dat`: store the potential value in a matrix, so if we have 4 committee potentials, the shape will be (frame_number, 4), the potential unit must be **eV**.
 
-`quantity.dat`: store the quantity value for every frame in matrix, so if we have gr with 200 bins, that is 200 quantities for one frame, the shape will be (frame_number, 200)
+`quantity.dat`: store the quantity value for every frame in matrix, so if we have radial distribution function with 200 bins, that is 200 quantities for one frame, the shape will be (frame_number, 200)
 
 `config.json`:
 
@@ -37,7 +37,7 @@ Prepare file: `config.json`, `ml_pot.dat`, `quantity.dat`
  }
 ```
 
-"pot_file": path to ml_pot
+"pot_file": path to ml_pot.dat file
 
 "quant_file": path to quantity file
 

@@ -36,7 +36,7 @@ def ipi_extra(arg):
     frame_pot_list = np.array(frame_pot_list)*unit_conversion
     np.savetxt("ml_pot.dat", frame_pot_list)
     fancy_print("save file to ml_pot.dat")
-    fancy_print("Finished")
+    fancy_print("FINISHED")
 
 def plot_example01(data1,
                    data2,

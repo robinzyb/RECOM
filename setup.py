@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
     name="RECOM",
-    version="0.0.1",
+    version="0.0.2",
     author="Yongbin Zhuang",
     author_email="robinzhuang@outlook.com",
     description="Small Package to reweight the result from committee MD\
